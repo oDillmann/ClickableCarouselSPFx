@@ -1,3 +1,4 @@
+import { WebPartContext } from "@microsoft/sp-webpart-base";
 
 export interface IClickableCarouselProps {
   description: string;
@@ -5,4 +6,5 @@ export interface IClickableCarouselProps {
   environmentMessage: string;
   hasTeamsContext: boolean;
   userDisplayName: string;
+  context: WebPartContext;
 }

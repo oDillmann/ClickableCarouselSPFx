@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { getSP } from '../../../pnpjsConfig';
 import { IClickableCarouselProps } from './IClickableCarouselProps';
 
 const ClickableCarousel = ({
@@ -7,7 +8,21 @@ const ClickableCarousel = ({
   environmentMessage,
   hasTeamsContext,
   userDisplayName,
+  context
 }: IClickableCarouselProps): JSX.Element => {
+
+  const sp = getSP(context);
+
+  const getList = async (): Promise<unknown[]> => {
+    const list = await sp.web.lists.getByTitle("/sites/Home/Lists/Clickable Carousel Images").items();
+    console.log(list)
+    return list
+  }
+
+  React.useEffect(() => {
+    getList();
+  }, []);
+
 
   return (
     <>
