@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "clickable-carousel-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/clickableCarousel/ClickableCarouselWebPart.js",
+          "manifest": "./src/webparts/clickableCarousel/ClickableCarouselWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ClickableCarouselWebPartStrings": "lib/webparts/clickableCarousel/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

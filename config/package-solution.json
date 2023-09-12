@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "clickable-carousel-client-side-solution",
+    "id": "f4940132-24f0-450d-ac70-1f1675080b48",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.17.4"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "clickable-carousel description"
+      },
+      "longDescription": {
+        "default": "clickable-carousel description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "clickable-carousel Feature",
+        "description": "The feature that activates elements of the clickable-carousel solution.",
+        "id": "0cc389b4-0e29-469f-8aeb-dbd399d5b217",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/clickable-carousel.sppkg"
+  }
+}
